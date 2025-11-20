@@ -1,0 +1,11 @@
+name: nfw-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13.8
+  - geopandas
+  - rasterio
+  - numpy
+  - pandas
+  - jupyterlab
+  - pip

@@ -1,0 +1,20 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nfw_project"
+version = "0.1.0"
+description = "Internal NFW analysis code and utilities"
+readme = "README.md"
+requires-python = ">=3.10"
+# Keep external deps in environment.yml / requirements.txt instead
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
