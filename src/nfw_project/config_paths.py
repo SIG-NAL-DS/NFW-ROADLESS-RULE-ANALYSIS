@@ -92,7 +92,16 @@ For example:
 Keep the names descriptive and UPPER_SNAKE_CASE. add them to __all__ so tab-complete works nicely.
 """
 
+NFS_ROADS_SHP: Path = RAW_DIR / "National_Forest_System_Roads_(Feature_Layer)" / "National_Forest_System_Roads_(Feature_Layer).shp"
+NFS_ROADS_GEOJSON: Path = RAW_DIR / "National_Forest_System_Roads_(Feature_Layer).geojson"
+ROADLESS_AREA: Path = RAW_DIR /  "S_USA.RoadlessArea_2001" / 'S_USA.RoadlessArea_2001.shp'
+USFS_GPKG: Path = INTERIM_DIR / "USFS.gpkg"
 
+US_STATES: Path = RAW_DIR /  "tl_2025_us_state" / 'tl_2025_us_state.shp'
+TIGERLINE_GPKG: Path = INTERIM_DIR / "TIGERLINE.gpkg"
+
+# Roadless / roads analysis output
+ROADLESS_ANALYSIS_GPKG: Path = PROCESSED_DIR / "Roadless_Roads_Analysis.gpkg"
 # ---------------------------------------------------------------------------
 # Helper functions
 # ---------------------------------------------------------------------------
@@ -140,5 +149,6 @@ __all__ = [
     "LOGS_OUTPUT_DIR",
     # helpers
     "ensure_output_dirs",
+    "NFS_ROADS_SHP"
     # (PROJECT-SPECIFIC DATASETS will be added here as you define them)
 ]

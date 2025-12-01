@@ -42,7 +42,7 @@ All code in this repo uses importable utilities from the `src/nfw_project/` pack
 
 To set up the environment and run the workflow:
 
-➡ **See: [`HOWTO_run.md`](01-requirements\HOWTO_run.md)**  
+➡ **See: [`HOWTO_run.md`](https://github.com/SIG-NAL-DS/NFW-ROADLESS-RULE-ANALYSIS/blob/main/01-requirements/HOWTO_run.md)**  
 This includes:
 
 - Environment setup  

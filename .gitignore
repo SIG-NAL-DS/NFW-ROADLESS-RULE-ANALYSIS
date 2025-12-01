@@ -208,6 +208,7 @@ __marimo__/
 
 
 data/raw/*
+data/interim/*
 data/processed/*
 05-outputs/*
 !data/README.md
