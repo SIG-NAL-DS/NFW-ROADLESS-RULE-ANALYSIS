@@ -95,13 +95,17 @@ Keep the names descriptive and UPPER_SNAKE_CASE. add them to __all__ so tab-comp
 NFS_ROADS_SHP: Path = RAW_DIR / "National_Forest_System_Roads_(Feature_Layer)" / "National_Forest_System_Roads_(Feature_Layer).shp"
 NFS_ROADS_GEOJSON: Path = RAW_DIR / "National_Forest_System_Roads_(Feature_Layer).geojson"
 ROADLESS_AREA: Path = RAW_DIR /  "S_USA.RoadlessArea_2001" / 'S_USA.RoadlessArea_2001.shp'
+USFS_FOREST_ADMIN_BOUNDARY: Path = RAW_DIR /  "Forest_Administrative_Boundaries_(Feature_Layer)" / 'Forest_Administrative_Boundaries_(Feature_Layer).shp'
+
 USFS_GPKG: Path = INTERIM_DIR / "USFS.gpkg"
 
 US_STATES: Path = RAW_DIR /  "tl_2025_us_state" / 'tl_2025_us_state.shp'
+TIGERLINE_ALL_ROADS: Path = RAW_DIR / "Tiger_Line_All_Roads.parquet"
 TIGERLINE_GPKG: Path = INTERIM_DIR / "TIGERLINE.gpkg"
 
 # Roadless / roads analysis output
 ROADLESS_ANALYSIS_GPKG: Path = PROCESSED_DIR / "Roadless_Roads_Analysis.gpkg"
+
 # ---------------------------------------------------------------------------
 # Helper functions
 # ---------------------------------------------------------------------------
@@ -135,8 +139,6 @@ __all__ = [
     "RAW_DIR",
     "INTERIM_DIR",
     "PROCESSED_DIR",
-    "EXTERNAL_DIR",
-    "FEATURES_DIR",
     "RAW_RASTERS_DIR",
     "RAW_VECTORS_DIR",
     "RAW_METADATA_DIR",
@@ -149,6 +151,10 @@ __all__ = [
     "LOGS_OUTPUT_DIR",
     # helpers
     "ensure_output_dirs",
-    "NFS_ROADS_SHP"
     # (PROJECT-SPECIFIC DATASETS will be added here as you define them)
+    "NFS_ROADS_SHP",
+    "USFS_GPKG",
+    "TIGERLINE_GPKG",
+    "TIGERLINE_ALL_ROADS",
+    "ROADLESS_ANALYSIS_GPKG"
 ]
