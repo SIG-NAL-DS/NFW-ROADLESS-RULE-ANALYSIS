@@ -262,7 +262,7 @@ def main():
 
 
     print("Building RA–HUC12 overlay...")
-    ra_huc12 = build_ra_huc12_overlay(roadless, model)
+    ra_huc12 = build_ra_huc12_overlay(roadless, model) # type: ignore
 
     print("Summarizing Category E risk indices by roadless area...")
     ra_risk = summarize_category_e_by_ra(ra_huc12)
